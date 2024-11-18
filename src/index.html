@@ -1,0 +1,566 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-poppins">
+    <div class="flex min-h-screen">
+      <!-- NavBar -->
+
+      <aside
+        class="bg-primary-gray flex w-64 flex-col xl:w-48 lg:w-24 sm:hidden"
+      >
+        <h1
+          class="mb-12 mt-8 text-center text-4xl font-semibold text-black xl:text-2xl lg:text-xl"
+        >
+          WeHR
+        </h1>
+        <div
+          class="ml-8 flex flex-col justify-start space-y-10 lg:ml-0 lg:items-center"
+        >
+          <p class="font-roboto text-xs text-dark-gray lg:text-xxs">
+            MAIN MENU
+          </p>
+
+          <div class="group flex cursor-pointer items-center gap-6">
+            <img
+              src="./assets/Vector.svg"
+              class="h-6 w-6 transition-transform group-hover:scale-125"
+            />
+            <a
+              href="#"
+              class="text-primary-red text-base font-medium group-hover:text-red-600 xl:text-sm lg:hidden"
+            >
+              Dashboard</a
+            >
+          </div>
+          <div class="group flex cursor-pointer items-center gap-6">
+            <img
+              src="./assets/ic_recruitment.svg"
+              class="h-6 w-6 transition-transform group-hover:scale-125"
+            />
+            <a
+              href="#"
+              class="text-base font-normal text-dark-gray group-hover:text-gray-700 xl:text-sm lg:hidden"
+            >
+              Recruitment
+            </a>
+          </div>
+
+          <div class="group flex cursor-pointer items-center gap-6">
+            <img
+              src="./assets/ic_calendar.svg"
+              class="h-6 w-6 transition-transform group-hover:scale-125"
+            />
+            <a
+              href="#"
+              class="text-base font-normal text-dark-gray group-hover:text-gray-700 xl:text-sm lg:hidden"
+            >
+              Schedule</a
+            >
+          </div>
+          <div class="group flex cursor-pointer items-center gap-6">
+            <img
+              src="./assets/ic_employee.svg"
+              class="h-6 w-6 transition-transform group-hover:scale-125"
+            />
+            <a
+              href="#"
+              class="text-base font-normal text-dark-gray group-hover:text-gray-700 xl:text-sm lg:hidden"
+            >
+              Employee</a
+            >
+          </div>
+          <div class="group flex cursor-pointer items-center gap-6">
+            <img
+              src="./assets/ic_department.svg"
+              class="h-6 w-6 transition-transform group-hover:scale-125"
+            />
+            <a
+              href="#"
+              class="text-base font-normal text-dark-gray group-hover:text-gray-700 xl:text-sm lg:hidden"
+            >
+              Department</a
+            >
+          </div>
+        </div>
+        <div
+          class="ml-8 mt-12 flex flex-col justify-start space-y-10 lg:ml-0 lg:items-center"
+        >
+          <p class="font-roboto text-xs text-dark-gray lg:text-xxs">OTHER</p>
+          <div class="group flex cursor-pointer items-center gap-6">
+            <img
+              src="./assets/ic_support.svg"
+              class="h-6 w-6 transition-transform group-hover:scale-125"
+            />
+            <a
+              href="#"
+              class="text-base font-normal text-dark-gray group-hover:text-gray-700 xl:text-sm lg:hidden"
+            >
+              Support</a
+            >
+          </div>
+          <div class="group flex cursor-pointer items-center gap-6">
+            <img
+              src="./assets/ic_settings.svg"
+              class="h-6 w-6 transition-transform group-hover:scale-125"
+            />
+            <a
+              href="#"
+              class="text-base font-normal text-dark-gray group-hover:text-gray-700 xl:text-sm lg:hidden"
+            >
+              Settings
+            </a>
+          </div>
+        </div>
+      </aside>
+      <main class="flex-1 bg-white px-14 py-6 xl:px-6">
+        <!-- Search -->
+
+        <div class="mb-6 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <img
+              src="./assets/burger.svg"
+              class="hidden size-6 cursor-pointer transition-transform group-hover:scale-125 lg:block"
+            />
+            <img
+              src="./assets/search.svg"
+              class="ml-4 hidden cursor-pointer transition-transform group-hover:scale-125 sm:block"
+            />
+            <div
+              class="bg-primary-gray flex max-w-md overflow-hidden rounded-md border-2 border-gray-border px-4 py-3 hover:border-black sm:hidden"
+            >
+              <input
+                type="email"
+                placeholder="Search"
+                class="w-full bg-transparent text-sm text-gray-600 outline-none"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 192.904 192.904"
+                width="16px"
+                class="fill-gray-500"
+              >
+                <path
+                  d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <!-- User Profile -->
+
+          <div class="flex items-center space-x-4 lg:ml-2">
+            <img
+              src="./assets/ic_round-notifications.svg"
+              class="size-6 cursor-pointer transition-transform hover:scale-125 sm:mr-2"
+            />
+            <img
+              src="./assets/message.svg"
+              class="size-6 cursor-pointer transition-transform hover:scale-125 sm:mr-2"
+            />
+            <div class="flex items-center">
+              <img
+                src="./assets/girl.png"
+                alt="Profile"
+                class="mr-2 size-10 cursor-pointer rounded-full border-2 border-gray-300 hover:ring-4 hover:ring-offset-2 sm:size-10"
+              />
+              <p class="font-medium text-dark-blue lg:hidden">Admirra John</p>
+              <img src="./assets/down.svg" class="size-6 cursor-pointer" />
+            </div>
+          </div>
+        </div>
+        <p
+          class="border-t border-gray-border pb-4 pt-6 text-2xl font-medium text-dark-blue"
+        >
+          Dashboard
+        </p>
+        <div class="flex gap-8 lg:flex-col">
+          <div class="flex grow flex-col gap-y-4">
+            <div class="flex w-full grow gap-6 sm:flex-col">
+              <!-- Available Position -->
+
+              <div
+                class="flex w-1/3 flex-col items-start justify-center gap-y-2 rounded-lg bg-light-orange px-5 py-3 hover:bg-orange-100 lg:py-5 sm:w-full"
+              >
+                <h3 class="text-lg font-medium text-dark-blue lg:text-base">
+                  Available Position
+                </h3>
+                <p class="text-4xl font-medium text-dark-blue lg:text-3xl">
+                  24
+                </p>
+                <p class="text-primary-red text-base lg:text-sm">
+                  4 Urgently needed
+                </p>
+              </div>
+
+              <!-- Job Open -->
+
+              <div
+                class="bg-soft-blue flex w-1/3 flex-col items-start justify-center gap-y-2 rounded-lg px-5 py-3 hover:bg-blue-100 lg:py-5 sm:w-full"
+              >
+                <h3 class="text-lg font-medium text-dark-blue lg:text-base">
+                  Job Open
+                </h3>
+                <p class="text-4xl font-medium text-dark-blue lg:text-3xl">
+                  10
+                </p>
+                <p class="text-soft-blue-text text-base lg:text-sm">
+                  4 Active hiring
+                </p>
+              </div>
+
+              <!-- New Employees -->
+
+              <div
+                class="flex w-1/3 flex-col items-start justify-center gap-y-2 rounded-lg bg-light-pink px-5 py-3 hover:bg-pink-100 lg:py-5 sm:w-full"
+              >
+                <h3 class="text-lg font-medium text-dark-blue lg:text-base">
+                  New Employees
+                </h3>
+                <p class="text-4xl font-medium text-dark-blue lg:text-3xl">
+                  24
+                </p>
+                <p class="text-base text-light-pink-text lg:text-sm">
+                  4 Department
+                </p>
+              </div>
+            </div>
+
+            <div class="flex w-full gap-4 sm:flex-col">
+              <!-- Total Employees -->
+
+              <div
+                class="flex w-1/2 items-start rounded-lg border border-gray-200 bg-white p-5 hover:bg-zinc-100 sm:w-full"
+              >
+                <div class="flex grow flex-col">
+                  <h3 class="text-xl font-medium text-dark-blue lg:text-lg">
+                    Total Employees
+                  </h3>
+                  <p
+                    class="mb-8 mt-6 text-5xl font-medium text-dark-blue lg:text-3xl"
+                  >
+                    216
+                  </p>
+                  <p class="mb-2 font-roboto text-xs text-dark-gray">120 Men</p>
+                  <p class="font-roboto text-xs text-dark-gray">96 Women</p>
+                </div>
+                <div class="mt-4 flex flex-col items-center">
+                  <img src="./assets/up_2.svg" alt="Up" class="mr-2 size-32" />
+                  <p
+                    class="rounded-lg bg-light-orange p-2 font-roboto text-xs text-black"
+                  >
+                    +2% Past month
+                  </p>
+                </div>
+              </div>
+
+              <!-- Talent Request -->
+
+              <div
+                class="flex w-1/2 items-start rounded-lg border border-gray-200 bg-white p-5 hover:bg-zinc-100 sm:w-full"
+              >
+                <div class="flex grow flex-col">
+                  <h3 class="text-xl font-medium text-dark-blue lg:text-lg">
+                    Talent Request
+                  </h3>
+                  <p
+                    class="mb-8 mt-6 text-5xl font-medium text-dark-blue lg:text-3xl"
+                  >
+                    16
+                  </p>
+                  <p class="mb-2 font-roboto text-xs text-dark-gray">6 Men</p>
+                  <p class="font-roboto text-xs text-dark-gray">10 Women</p>
+                </div>
+                <div class="mt-4 flex flex-col items-center">
+                  <img src="./assets/up_5.svg" alt="Up" class="mr-2 size-32" />
+                  <p
+                    class="rounded-lg bg-light-orange p-2 font-roboto text-xs text-black"
+                  >
+                    +5% Past month
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Announcement -->
+
+            <div class="w-full rounded-lg border border-gray-200 bg-white">
+              <div class="flex items-center justify-between px-5 py-4">
+                <h3 class="text-lg font-medium text-dark-blue lg:text-base">
+                  Announcement
+                </h3>
+                <div
+                  class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-gray-border px-2 py-1 hover:border-white hover:bg-gray-300"
+                >
+                  <p class="font-roboto text-xs text-dark-gray">
+                    Today, 13 Sep 2021
+                  </p>
+                  <img
+                    src="./assets/down-light.svg"
+                    alt="down"
+                    class="size-5"
+                  />
+                </div>
+              </div>
+              <div
+                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+              >
+                <div class="flex flex-col sm:w-full">
+                  <p class="text-base text-black">
+                    Outing schedule for every department
+                  </p>
+                  <div class="items-center justify-between sm:flex">
+                    <p class="text-xs text-dark-gray">5 minutes ago</p>
+                    <div class="flex flex-row">
+                      <img
+                        src="./assets/pin-fill.svg"
+                        alt="down"
+                        class="hidden size-6 sm:block"
+                      />
+                      <img
+                        src="./assets/menu-horizontal.svg"
+                        alt="down"
+                        class="hidden size-6 sm:block"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-end gap-x-5 sm:hidden">
+                  <img
+                    src="./assets/pin-fill.svg"
+                    alt="down"
+                    class="size-6 cursor-pointer"
+                  />
+                  <img
+                    src="./assets/menu-horizontal.svg"
+                    alt="down"
+                    class="size-6 cursor-pointer"
+                  />
+                </div>
+              </div>
+              <div
+                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+              >
+                <div class="flex flex-col sm:w-full">
+                  <p class="text-base text-black">Meeting HR Department</p>
+                  <div class="items-center justify-between sm:flex">
+                    <p class="text-xs text-dark-gray">Yesterday, 10:30 PM</p>
+                    <div class="flex flex-row">
+                      <img
+                        src="./assets/pin.svg"
+                        alt="down"
+                        class="hidden size-6 sm:block"
+                      />
+                      <img
+                        src="./assets/menu-horizontal.svg"
+                        alt="down"
+                        class="hidden size-6 sm:block"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-end gap-x-5 sm:hidden">
+                  <img
+                    src="./assets/pin.svg"
+                    alt="down"
+                    class="size-6 cursor-pointer"
+                  />
+                  <img
+                    src="./assets/menu-horizontal.svg"
+                    alt="down"
+                    class="size-6 cursor-pointer"
+                  />
+                </div>
+              </div>
+              <div
+                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+              >
+                <div class="flex flex-col sm:w-full">
+                  <p class="text-base text-black">
+                    IT Department need two more talents for UX/UI Designer
+                    position
+                  </p>
+                  <div class="items-center justify-between sm:flex">
+                    <p class="text-xs text-dark-gray">Yesterday, 09:15 AM</p>
+                    <div class="flex flex-row">
+                      <img
+                        src="./assets/pin.svg"
+                        alt="down"
+                        class="hidden size-6 sm:block"
+                      />
+                      <img
+                        src="./assets/menu-horizontal.svg"
+                        alt="down"
+                        class="hidden size-6 sm:block"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-end justify-end gap-x-5 sm:hidden">
+                  <img
+                    src="./assets/pin.svg"
+                    alt="down"
+                    class="size-6 cursor-pointer"
+                  />
+                  <img
+                    src="./assets/menu-horizontal.svg"
+                    alt="down"
+                    class="size-6 cursor-pointer"
+                  />
+                </div>
+              </div>
+              <p
+                class="text-primary-red cursor-pointer border-t border-gray-200 p-2 text-center font-medium hover:bg-gray-100 hover:text-red-600"
+              >
+                See All Announcement
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-between gap-4 lg:flex-row sm:flex-col"
+          >
+            <!-- Recently Activity -->
+
+            <div
+              class="w-full overflow-hidden rounded-lg bg-dark-blue text-white lg:w-2/5 sm:w-full"
+            >
+              <h3
+                class="bg-navy-blue px-6 py-3 text-xl font-medium lg:text-base"
+              >
+                Recently Activity
+              </h3>
+              <p class="mt-2 px-6 font-roboto text-sm text-white opacity-80">
+                10:40 AM, Fri 10 Sep 2021
+              </p>
+              <p class="mt-4 px-6 text-xl font-medium lg:text-base">
+                You Posted a New Job
+              </p>
+              <p class="mt-2 px-6 font-roboto text-sm opacity-80">
+                Kindly check the requirements and<br />
+                terms of work and make sure everything is right.
+              </p>
+              <div
+                class="mb-4 mt-4 flex items-center justify-between gap-6 px-6 lg:flex-col lg:items-start lg:justify-start"
+              >
+                <p>Today you makes 12 Activity</p>
+                <button
+                  class="bg-primary-red rounded-lg px-5 py-2 font-medium text-white hover:bg-red-600 lg:text-sm"
+                >
+                  See All Activity
+                </button>
+              </div>
+            </div>
+
+            <!-- Upcoming Schedule -->
+
+            <div
+              class="h-fit rounded-lg border border-gray-200 bg-white lg:my-auto lg:grow"
+            >
+              <div class="flex items-center justify-between p-5">
+                <h3 class="text-lg font-medium text-dark-blue lg:text-base">
+                  Upcoming Schedule
+                </h3>
+                <div
+                  class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-gray-border px-2 py-1 hover:border-white hover:bg-gray-300"
+                >
+                  <p class="font-roboto text-xs text-dark-gray">
+                    Today, 13 Sep 2021
+                  </p>
+                  <img
+                    src="./assets/down-light.svg"
+                    alt="down"
+                    class="size-5"
+                  />
+                </div>
+              </div>
+              <p class="px-5 text-xs text-dark-gray">Priority</p>
+              <div
+                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+              >
+                <div class="flex flex-col gap-2">
+                  <p class="text-base text-black lg:text-sm">
+                    Review candidate applications
+                  </p>
+                  <p class="text-xs text-dark-gray">Today - 11.30 AM</p>
+                </div>
+                <img
+                  src="./assets/menu-horizontal.svg"
+                  alt="down"
+                  class="size-6 cursor-pointer"
+                />
+              </div>
+              <p class="px-5 py-1.5 text-xs text-dark-gray">Other</p>
+              <div
+                class="bg-primary-gray mx-5 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+              >
+                <div class="flex flex-col gap-2">
+                  <p class="text-base text-black lg:text-sm">
+                    Interview with candidates
+                  </p>
+                  <p class="text-xs text-dark-gray">Today - 10.30 AM</p>
+                </div>
+                <img
+                  src="./assets/menu-horizontal.svg "
+                  alt="down"
+                  class="size-6 cursor-pointer"
+                />
+              </div>
+              <div
+                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100 lg:hidden"
+              >
+                <div class="flex flex-col gap-2">
+                  <p class="text-base text-black lg:text-sm">
+                    Short meeting with product designer <br />
+                    from IT Departement
+                  </p>
+                  <p class="text-xs text-dark-gray">Today - 09.15 AM</p>
+                </div>
+                <img
+                  src="./assets/menu-horizontal.svg"
+                  alt="down"
+                  class="size-6 cursor-pointer"
+                />
+              </div>
+
+              <div class="relative mx-5 mt-2 h-2 overflow-hidden">
+                <div
+                  class="bg-primary-gray absolute top-0 flex w-full items-center justify-between rounded-lg border border-gray-200 px-4 py-3"
+                >
+                  <div class="flex flex-col gap-2">
+                    <p class="text-base text-black">
+                      Discuss something with PR
+                    </p>
+                    <p class="text-xs text-dark-gray">Today - 19.15 AM</p>
+                  </div>
+                  <img
+                    src="./assets/menu-horizontal.svg"
+                    alt="down"
+                    class="size-6 cursor-pointer"
+                  />
+                </div>
+              </div>
+
+              <p
+                class="text-primary-red cursor-pointer border-t border-gray-200 p-2 text-center font-medium hover:bg-gray-100 hover:text-red-600 lg:text-sm"
+              >
+                Creat a New Schedule
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
