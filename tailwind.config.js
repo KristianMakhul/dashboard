@@ -7,26 +7,34 @@ module.exports = {
       lg: { max: "1000px" },
       sm: { max: "625px" },
     },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
+    },
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
-      },
       fontSize: {
         xxs: "0.625rem",
       },
       colors: {
-        "primary-gray": "#FAFAFA",
-        "dark-gray": "#686868",
-        "primary-red": "#FF5151",
+        "primary": {
+          "gray": "#FAFAFA",
+          "red": "#FF5151",
+        },
+        "dark": {
+          "gray": "#686868",
+          "blue": "#161e54",
+        },
+        "soft": {
+          "blue": "#E8F0FB",
+          "blue-text": "#3786F1",
+        },
+        "light": {
+          "pink-text": "#EE61CF",
+          "orange": "#FFEFE7",
+          "pink": "#FDEBF9",
+        },
         "gray-border": "#E0E0E0",
-        "dark-blue": "#161e54",
         "navy-blue": "#1b204a",
-        "light-orange": "#FFEFE7",
-        "light-pink": "#FDEBF9",
-        "soft-blue": "#E8F0FB",
-        "soft-blue-text": "#3786F1",
-        "light-pink-text": "#EE61CF",
       },
     },
   },

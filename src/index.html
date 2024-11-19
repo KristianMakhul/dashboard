@@ -15,24 +15,24 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-100 font-poppins">
+  <body class="bg-gray-100">
     <div class="flex min-h-screen">
       <!-- NavBar -->
 
       <aside
         class="bg-primary-gray flex w-64 flex-col xl:w-48 lg:w-24 sm:hidden"
       >
-        <h1
-          class="mb-12 mt-8 text-center text-4xl font-semibold text-black xl:text-2xl lg:text-xl"
+        <span
+          class="pb-12 pt-8 text-center text-4xl font-semibold text-black xl:text-2xl lg:text-xl"
         >
           WeHR
-        </h1>
+        </span>
         <div
-          class="ml-8 flex flex-col justify-start space-y-10 lg:ml-0 lg:items-center"
+          class="pl-8 flex flex-col justify-start gap-10 lg:pl-0 lg:items-center"
         >
-          <p class="font-roboto text-xs text-dark-gray lg:text-xxs">
+          <span class="font-roboto text-xs text-dark-gray lg:text-xxs">
             MAIN MENU
-          </p>
+          </span>
 
           <div class="group flex cursor-pointer items-center gap-6">
             <img
@@ -97,9 +97,9 @@
           </div>
         </div>
         <div
-          class="ml-8 mt-12 flex flex-col justify-start space-y-10 lg:ml-0 lg:items-center"
+          class="pl-8 pt-12 flex flex-col justify-start gap-10 lg:pl-0 lg:items-center"
         >
-          <p class="font-roboto text-xs text-dark-gray lg:text-xxs">OTHER</p>
+          <span class="font-roboto text-xs text-dark-gray lg:text-xxs">OTHER</span>
           <div class="group flex cursor-pointer items-center gap-6">
             <img
               src="./assets/ic_support.svg"
@@ -126,10 +126,10 @@
           </div>
         </div>
       </aside>
-      <main class="flex-1 bg-white px-14 py-6 xl:px-6">
+      <main class="flex-1 bg-white px-14 py-5 xl:px-6">
         <!-- Search -->
 
-        <div class="mb-6 flex items-center justify-between">
+        <div class="pb-6 flex items-center justify-between">
           <div class="flex items-center gap-4">
             <img
               src="./assets/burger.svg"
@@ -137,7 +137,7 @@
             />
             <img
               src="./assets/search.svg"
-              class="ml-4 hidden cursor-pointer transition-transform group-hover:scale-125 sm:block"
+              class="pl-4 hidden cursor-pointer transition-transform group-hover:scale-125 sm:block"
             />
             <div
               class="bg-primary-gray flex max-w-md overflow-hidden rounded-md border-2 border-gray-border px-4 py-3 hover:border-black sm:hidden"
@@ -161,7 +161,7 @@
           </div>
           <!-- User Profile -->
 
-          <div class="flex items-center space-x-4 lg:ml-2">
+          <div class="flex items-center gap-4 lg:pl-2">
             <img
               src="./assets/ic_round-notifications.svg"
               class="size-6 cursor-pointer transition-transform hover:scale-125 sm:mr-2"
@@ -176,65 +176,65 @@
                 alt="Profile"
                 class="mr-2 size-10 cursor-pointer rounded-full border-2 border-gray-300 hover:ring-4 hover:ring-offset-2 sm:size-10"
               />
-              <p class="font-medium text-dark-blue lg:hidden">Admirra John</p>
+              <span class="font-medium text-dark-blue lg:hidden">Admirra John</span>
               <img src="./assets/down.svg" class="size-6 cursor-pointer" />
             </div>
           </div>
         </div>
-        <p
-          class="border-t border-gray-border pb-4 pt-6 text-2xl font-medium text-dark-blue"
+        <h2
+          class="border-t border-gray-border py-4 text-2xl font-medium text-dark-blue"
         >
           Dashboard
-        </p>
+      </h2>
         <div class="flex gap-8 lg:flex-col">
           <div class="flex grow flex-col gap-y-4">
             <div class="flex w-full grow gap-6 sm:flex-col">
               <!-- Available Position -->
 
               <div
-                class="flex w-1/3 flex-col items-start justify-center gap-y-2 rounded-lg bg-light-orange px-5 py-3 hover:bg-orange-100 lg:py-5 sm:w-full"
+                class="flex flex-1 basis-full flex-col items-start justify-center gap-y-2 rounded-lg bg-light-orange px-5 py-3 hover:bg-orange-100 lg:py-5 sm:w-full"
               >
                 <h3 class="text-lg font-medium text-dark-blue lg:text-base">
                   Available Position
                 </h3>
-                <p class="text-4xl font-medium text-dark-blue lg:text-3xl">
+                <span class="text-4xl font-medium text-dark-blue lg:text-3xl">
                   24
-                </p>
-                <p class="text-primary-red text-base lg:text-sm">
+                </span>
+                <span class="text-primary-red text-base lg:text-sm">
                   4 Urgently needed
-                </p>
+                </span>
               </div>
 
               <!-- Job Open -->
 
               <div
-                class="bg-soft-blue flex w-1/3 flex-col items-start justify-center gap-y-2 rounded-lg px-5 py-3 hover:bg-blue-100 lg:py-5 sm:w-full"
+                class="bg-soft-blue flex flex-1 basis-full flex-col items-start justify-center gap-y-2 rounded-lg px-5 py-3 hover:bg-blue-100 lg:py-5 sm:w-full"
               >
                 <h3 class="text-lg font-medium text-dark-blue lg:text-base">
                   Job Open
                 </h3>
-                <p class="text-4xl font-medium text-dark-blue lg:text-3xl">
+                <span class="text-4xl font-medium text-dark-blue lg:text-3xl">
                   10
-                </p>
-                <p class="text-soft-blue-text text-base lg:text-sm">
+                </span>
+                <span class="text-soft-blue-text text-base lg:text-sm">
                   4 Active hiring
-                </p>
+                </span>
               </div>
 
               <!-- New Employees -->
 
               <div
-                class="flex w-1/3 flex-col items-start justify-center gap-y-2 rounded-lg bg-light-pink px-5 py-3 hover:bg-pink-100 lg:py-5 sm:w-full"
+                class="flex flex-1 basis-full flex-col items-start justify-center gap-y-2 rounded-lg bg-light-pink px-5 py-3 hover:bg-pink-100 lg:py-5 sm:w-full"
               >
                 <h3 class="text-lg font-medium text-dark-blue lg:text-base">
                   New Employees
                 </h3>
-                <p class="text-4xl font-medium text-dark-blue lg:text-3xl">
+                <span class="text-4xl font-medium text-dark-blue lg:text-3xl">
                   24
-                </p>
-                <p class="text-base text-light-pink-text lg:text-sm">
+                </span>
+                <span class="text-base text-light-pink-text lg:text-sm">
                   4 Department
-                </p>
+                </span>
               </div>
             </div>
 
@@ -248,21 +248,21 @@
                   <h3 class="text-xl font-medium text-dark-blue lg:text-lg">
                     Total Employees
                   </h3>
-                  <p
-                    class="mb-8 mt-6 text-5xl font-medium text-dark-blue lg:text-3xl"
+                  <span
+                    class="pb-8 pt-6 text-5xl font-medium text-dark-blue lg:text-3xl"
                   >
                     216
-                  </p>
-                  <p class="mb-2 font-roboto text-xs text-dark-gray">120 Men</p>
-                  <p class="font-roboto text-xs text-dark-gray">96 Women</p>
+                  </span>
+                  <span class="pb-2 font-roboto text-xs text-dark-gray">120 Men</span>
+                  <span class="font-roboto text-xs text-dark-gray">96 Women</span>
                 </div>
-                <div class="mt-4 flex flex-col items-center">
-                  <img src="./assets/up_2.svg" alt="Up" class="mr-2 size-32" />
-                  <p
+                <div class="pt-4 flex flex-col items-center">
+                  <img src="./assets/up_2.svg" alt="Up" class="pr-2 size-32" />
+                  <span
                     class="rounded-lg bg-light-orange p-2 font-roboto text-xs text-black"
                   >
                     +2% Past month
-                  </p>
+                  </span>
                 </div>
               </div>
 
@@ -275,21 +275,21 @@
                   <h3 class="text-xl font-medium text-dark-blue lg:text-lg">
                     Talent Request
                   </h3>
-                  <p
-                    class="mb-8 mt-6 text-5xl font-medium text-dark-blue lg:text-3xl"
+                  <span
+                    class="pb-8 pt-6 text-5xl font-medium text-dark-blue lg:text-3xl"
                   >
                     16
-                  </p>
-                  <p class="mb-2 font-roboto text-xs text-dark-gray">6 Men</p>
-                  <p class="font-roboto text-xs text-dark-gray">10 Women</p>
+                  </span>
+                  <span class="pb-2 font-roboto text-xs text-dark-gray">6 Men</span>
+                  <span class="font-roboto text-xs text-dark-gray">10 Women</span>
                 </div>
-                <div class="mt-4 flex flex-col items-center">
-                  <img src="./assets/up_5.svg" alt="Up" class="mr-2 size-32" />
-                  <p
+                <div class="pt-4 flex flex-col items-center">
+                  <img src="./assets/up_5.svg" alt="Up" class="pr-2 size-32" />
+                  <span
                     class="rounded-lg bg-light-orange p-2 font-roboto text-xs text-black"
                   >
                     +5% Past month
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>
@@ -304,9 +304,9 @@
                 <div
                   class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-gray-border px-2 py-1 hover:border-white hover:bg-gray-300"
                 >
-                  <p class="font-roboto text-xs text-dark-gray">
+                  <span class="font-roboto text-xs text-dark-gray">
                     Today, 13 Sep 2021
-                  </p>
+                  </span>
                   <img
                     src="./assets/down-light.svg"
                     alt="down"
@@ -315,14 +315,14 @@
                 </div>
               </div>
               <div
-                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+                class="bg-primary-gray mx-5  flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
               >
                 <div class="flex flex-col sm:w-full">
-                  <p class="text-base text-black">
+                  <span class="text-base text-black">
                     Outing schedule for every department
-                  </p>
+                  </span>
                   <div class="items-center justify-between sm:flex">
-                    <p class="text-xs text-dark-gray">5 minutes ago</p>
+                    <span class="text-xs text-dark-gray">5 minutes ago</span>
                     <div class="flex flex-row">
                       <img
                         src="./assets/pin-fill.svg"
@@ -354,9 +354,9 @@
                 class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
               >
                 <div class="flex flex-col sm:w-full">
-                  <p class="text-base text-black">Meeting HR Department</p>
+                  <span class="text-base text-black">Meeting HR Department</span>
                   <div class="items-center justify-between sm:flex">
-                    <p class="text-xs text-dark-gray">Yesterday, 10:30 PM</p>
+                    <span class="text-xs text-dark-gray">Yesterday, 10:30 PM</span>
                     <div class="flex flex-row">
                       <img
                         src="./assets/pin.svg"
@@ -385,15 +385,15 @@
                 </div>
               </div>
               <div
-                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+                class="bg-primary-gray mx-5 my-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
               >
                 <div class="flex flex-col sm:w-full">
-                  <p class="text-base text-black">
+                  <span class="text-base text-black">
                     IT Department need two more talents for UX/UI Designer
                     position
-                  </p>
+                  </span>
                   <div class="items-center justify-between sm:flex">
-                    <p class="text-xs text-dark-gray">Yesterday, 09:15 AM</p>
+                    <span class="text-xs text-dark-gray">Yesterday, 09:15 AM</span>
                     <div class="flex flex-row">
                       <img
                         src="./assets/pin.svg"
@@ -421,11 +421,11 @@
                   />
                 </div>
               </div>
-              <p
-                class="text-primary-red cursor-pointer border-t border-gray-200 p-2 text-center font-medium hover:bg-gray-100 hover:text-red-600"
+              <a
+                class="block text-primary-red cursor-pointer border-t border-gray-200 p-2 text-center font-medium hover:bg-gray-100 hover:text-red-600"
               >
                 See All Announcement
-              </p>
+              </a>
             </div>
           </div>
           <div
@@ -441,20 +441,20 @@
               >
                 Recently Activity
               </h3>
-              <p class="mt-2 px-6 font-roboto text-sm text-white opacity-80">
+              <span class="block pt-2 px-6 font-roboto text-sm text-white opacity-80">
                 10:40 AM, Fri 10 Sep 2021
-              </p>
-              <p class="mt-4 px-6 text-xl font-medium lg:text-base">
+              </span>
+              <span class="block py-4 px-6 text-xl font-medium lg:text-base">
                 You Posted a New Job
-              </p>
-              <p class="mt-2 px-6 font-roboto text-sm opacity-80">
-                Kindly check the requirements and<br />
+              </span>
+              <span class="block py-2 px-6 font-roboto text-sm opacity-80">
+                Kindly check the requirements and<br/>
                 terms of work and make sure everything is right.
-              </p>
+              </span>
               <div
-                class="mb-4 mt-4 flex items-center justify-between gap-6 px-6 lg:flex-col lg:items-start lg:justify-start"
+                class="pb-4 pt-4 flex items-center justify-between gap-6 px-6 lg:flex-col lg:items-start lg:justify-start"
               >
-                <p>Today you makes 12 Activity</p>
+                <span>Today you makes 12 Activity</span>
                 <button
                   class="bg-primary-red rounded-lg px-5 py-2 font-medium text-white hover:bg-red-600 lg:text-sm"
                 >
@@ -466,7 +466,7 @@
             <!-- Upcoming Schedule -->
 
             <div
-              class="h-fit rounded-lg border border-gray-200 bg-white lg:my-auto lg:grow"
+              class="grow flex flex-col rounded-lg border border-gray-200 bg-white"
             >
               <div class="flex items-center justify-between p-5">
                 <h3 class="text-lg font-medium text-dark-blue lg:text-base">
@@ -475,9 +475,9 @@
                 <div
                   class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-gray-border px-2 py-1 hover:border-white hover:bg-gray-300"
                 >
-                  <p class="font-roboto text-xs text-dark-gray">
+                  <span class="font-roboto text-xs text-dark-gray">
                     Today, 13 Sep 2021
-                  </p>
+                  </span>
                   <img
                     src="./assets/down-light.svg"
                     alt="down"
@@ -485,15 +485,15 @@
                   />
                 </div>
               </div>
-              <p class="px-5 text-xs text-dark-gray">Priority</p>
+              <span class="px-5 text-xs text-dark-gray">Priority</span>
               <div
                 class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
               >
                 <div class="flex flex-col gap-2">
-                  <p class="text-base text-black lg:text-sm">
+                  <span class="text-base text-black lg:text-sm">
                     Review candidate applications
-                  </p>
-                  <p class="text-xs text-dark-gray">Today - 11.30 AM</p>
+                  </span>
+                  <span class="text-xs text-dark-gray">Today - 11.30 AM</span>
                 </div>
                 <img
                   src="./assets/menu-horizontal.svg"
@@ -501,15 +501,15 @@
                   class="size-6 cursor-pointer"
                 />
               </div>
-              <p class="px-5 py-1.5 text-xs text-dark-gray">Other</p>
+              <span class="px-5 py-1.5 text-xs text-dark-gray">Other</span>
               <div
-                class="bg-primary-gray mx-5 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100"
+                class="bg-primary-gray mx-5 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100 lg:mb-2"
               >
                 <div class="flex flex-col gap-2">
-                  <p class="text-base text-black lg:text-sm">
+                  <span class="text-base text-black lg:text-sm">
                     Interview with candidates
-                  </p>
-                  <p class="text-xs text-dark-gray">Today - 10.30 AM</p>
+                  </span>
+                  <span class="text-xs text-dark-gray">Today - 10.30 AM</span>
                 </div>
                 <img
                   src="./assets/menu-horizontal.svg "
@@ -518,14 +518,14 @@
                 />
               </div>
               <div
-                class="bg-primary-gray mx-5 mt-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100 lg:hidden"
+                class="bg-primary-gray mx-5 my-2 flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2 hover:bg-gray-100 lg:hidden"
               >
                 <div class="flex flex-col gap-2">
-                  <p class="text-base text-black lg:text-sm">
+                  <span class="text-base text-black lg:text-sm">
                     Short meeting with product designer <br />
                     from IT Departement
-                  </p>
-                  <p class="text-xs text-dark-gray">Today - 09.15 AM</p>
+                  </span >
+                  <span class="text-xs text-dark-gray">Today - 09.15 AM</span>
                 </div>
                 <img
                   src="./assets/menu-horizontal.svg"
@@ -534,29 +534,11 @@
                 />
               </div>
 
-              <div class="relative mx-5 mt-2 h-2 overflow-hidden">
-                <div
-                  class="bg-primary-gray absolute top-0 flex w-full items-center justify-between rounded-lg border border-gray-200 px-4 py-3"
-                >
-                  <div class="flex flex-col gap-2">
-                    <p class="text-base text-black">
-                      Discuss something with PR
-                    </p>
-                    <p class="text-xs text-dark-gray">Today - 19.15 AM</p>
-                  </div>
-                  <img
-                    src="./assets/menu-horizontal.svg"
-                    alt="down"
-                    class="size-6 cursor-pointer"
-                  />
-                </div>
-              </div>
-
-              <p
-                class="text-primary-red cursor-pointer border-t border-gray-200 p-2 text-center font-medium hover:bg-gray-100 hover:text-red-600 lg:text-sm"
+              <a 
+                class="block mt-auto text-primary-red cursor-pointer border-t border-gray-200 p-2 text-center font-medium hover:bg-gray-100 hover:text-red-600 lg:text-sm"
               >
                 Creat a New Schedule
-              </p>
+              </a>
             </div>
           </div>
         </div>
